@@ -177,7 +177,7 @@ public class Main {
 
 		System.out.println("Rjesenje je pronadeno u " + bestInGen.size() + " generacija.");
 		System.out.println("Koliko generacija zelite da svira: ");
-		NUMBER_OF_PLAY_GEN = sc.nextInt();
+		NUMBER_OF_PLAY_GEN = sc.nextInt() -1;
 		sc.close();
 
 		Player player = new Player();
