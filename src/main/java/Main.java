@@ -1,26 +1,14 @@
 import org.jenetics.*;
 import org.jenetics.engine.Engine;
 import org.jenetics.engine.EvolutionResult;
-import org.jenetics.engine.codecs;
 import org.jenetics.engine.limit;
 import org.jenetics.util.Factory;
 import org.jfugue.player.Player;
 
 import java.time.Duration;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
-import static org.jenetics.engine.EvolutionResult.toBestPhenotype;
 
 public class Main {
 	private static final int ITERATION_COUNT = 11;
@@ -84,7 +72,7 @@ public class Main {
 				.populationSize(POPULATION_SIZE)
 				.minimizing()
 				//.selector(new TournamentSelector<>(TOURNAMENT_SIZE))
-				.selector(new LinearRankSelector<>())
+				.selector(new TruncationSelector<>(7) )
 				.offspringFraction(OFFSPRING_FRACTION)
 				.alterers(new UniformCrossover<>(1), new GaussianMutator<>(0.25), new MeanAlterer<>(0.25))//, new GaussianMutator<>(0.25), new MeanAlterer<>(0.25)
 				.build();
