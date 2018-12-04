@@ -72,9 +72,9 @@ public class Main {
 				.populationSize(POPULATION_SIZE)
 				.minimizing()
 				//.selector(new TournamentSelector<>(TOURNAMENT_SIZE))
-				.selector(new TruncationSelector<>(7) )
+				.selector(new BoltzmannSelector<>(4) )
 				.offspringFraction(OFFSPRING_FRACTION)
-				.alterers(new UniformCrossover<>(1), new GaussianMutator<>(0.25), new MeanAlterer<>(0.25))//, new GaussianMutator<>(0.25), new MeanAlterer<>(0.25)
+				.alterers(new UniformCrossover<>(0.5), new GaussianMutator<>(0.25), new MeanAlterer<>(0.25))//, new GaussianMutator<>(0.25), new MeanAlterer<>(0.25)
 				.build();
 
 		final EvolutionResult<IntegerGene, Double> result = engine.stream().limit(limit.byFitnessThreshold(1.0))
