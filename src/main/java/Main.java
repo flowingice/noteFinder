@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-	private static final int ITERATION_COUNT = 11;
+	private static final int ITERATION_COUNT = 1;
 	private static final int POPULATION_SIZE = 10;
 	private static final int TOURNAMENT_SIZE = 7;
 	private static final double OFFSPRING_FRACTION = 0.8;
@@ -37,15 +37,14 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 
-		// System.out.print("Unesite note: ");
-		// INPUT_CONTENT = sc.nextLine();
-		// System.out.println("Koliko generacija zelite da svira: ");
-		// NUMBER_OF_PLAY_GEN = sc.nextInt();
-		INPUT_CONTENT = "A C A B D E F G A B";
+		//INPUT_CONTENT = "A C A B D E F G A B";
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Unesite note: ");
+		INPUT_CONTENT = sc.nextLine();
+
 		LENGTH_OF_INPUT = noteToNum(INPUT_CONTENT).length();
-		sc.close();
+		//sc.close();
 
 		for (int i = 0; i < ITERATION_COUNT; i++) {
 
@@ -54,11 +53,12 @@ public class Main {
 			long endTime = System.nanoTime();
 
 			long duration = (endTime - startTime) / 1000000; // divide by 1000000 to get milliseconds.
-			System.out.println(i + " Time: " + duration);
+			System.out.println(" Time: " + duration +" ms");
 			System.out.println();
-			// playGenerations();
 		}
-		//System.out.println(GEN_COUNT/ITERATION_COUNT);
+
+
+		playGenerations();
 
 	}
 
@@ -92,7 +92,7 @@ public class Main {
 		// "No");
 		// TODO: return
 		System.out.println("Gen count: " + result.getTotalGenerations());
-		//GEN_COUNT += result.getTotalGenerations();
+		GEN_COUNT += result.getTotalGenerations();
 		 //System.out.println("Time: " + result.getDurations().getEvaluationDuration());
 		// System.out.println(result.getBestPhenotype().toString());
 		//System.out.println(numToNote(result.getBestPhenotype().getGenotype().toString()));
@@ -171,18 +171,33 @@ public class Main {
 
 	private static void playGenerations() {
 
+
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Rjesenje je pronadeno u " + bestInGen.size() + " generacija.");
+		System.out.println("Koliko generacija zelite da svira: ");
+		NUMBER_OF_PLAY_GEN = sc.nextInt();
+		sc.close();
+
 		Player player = new Player();
+
 		if (NUMBER_OF_PLAY_GEN > bestInGen.size() || NUMBER_OF_PLAY_GEN == -1) {
 			NUMBER_OF_PLAY_GEN = bestInGen.size() - 1;
 		}
 
-		double stepSize = bestInGen.size() / NUMBER_OF_PLAY_GEN;
-		for (int i = 0; i < NUMBER_OF_PLAY_GEN; i++) {
-			System.out.println(bestInGen.get((int) (i * stepSize)));
-			player.play(bestInGen.get((int) (i * stepSize)));
+		if(NUMBER_OF_PLAY_GEN > 1) {
+			double stepSize = bestInGen.size() / NUMBER_OF_PLAY_GEN;
+			for (int i = 0; i < NUMBER_OF_PLAY_GEN; i++) {
+				System.out.println(bestInGen.get((int) (i * stepSize)));
+				player.play(bestInGen.get((int) (i * stepSize)));
+			}
 		}
-		System.out.println(((LinkedList<String>) bestInGen).getLast());
-		player.play(((LinkedList<String>) bestInGen).getLast());
+
+		if(NUMBER_OF_PLAY_GEN > 0){
+			System.out.println(((LinkedList<String>) bestInGen).getLast());
+			player.play(((LinkedList<String>) bestInGen).getLast());
+		}
 
 	}
 }
