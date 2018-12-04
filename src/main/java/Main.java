@@ -181,8 +181,10 @@ public class Main {
 		sc.close();
 
 		Player player = new Player();
+		//player.play("C C# D D# E F F# G G# A A# B ");
+		//player.play("C Db D Eb E F Gb G Ab A Bb B ");
 
-		if (NUMBER_OF_PLAY_GEN > bestInGen.size() || NUMBER_OF_PLAY_GEN == -1) {
+		if (NUMBER_OF_PLAY_GEN > bestInGen.size() || NUMBER_OF_PLAY_GEN == -2) {
 			NUMBER_OF_PLAY_GEN = bestInGen.size() - 1;
 		}
 

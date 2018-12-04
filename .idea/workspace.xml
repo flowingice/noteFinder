@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="179" column="44" selection-start-line="179" selection-start-column="44" selection-end-line="179" selection-end-column="44" />
+            <state relative-caret-position="280">
+              <caret line="184" column="52" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,10 +73,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="550" />
-    <option name="y" value="171" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="2551" />
+    <option name="y" value="353" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -346,7 +346,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543927993404" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543928465937" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -400,18 +400,18 @@
       <workItem from="1542709973007" duration="11762000" />
       <workItem from="1542728756354" duration="1063000" />
       <workItem from="1542792525498" duration="7130000" />
-      <workItem from="1543914015090" duration="5998000" />
+      <workItem from="1543914015090" duration="6303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69382000" />
+    <option name="totallyTimeSpent" value="69687000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <frame x="2553" y="355" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49935484" visible="true" weight="0.17332667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49935484" visible="true" weight="0.23288591" />
       <window_info id="Structure" order="1" sideWeight="0.50064516" side_tool="true" weight="0.51248753" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -421,14 +421,14 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.499001" visible="true" weight="0.2193159" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499001" weight="0.2193159" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993964" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4995005" weight="0.32394367" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4995005" visible="true" weight="0.45609066" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500999" side_tool="true" weight="0.2193159" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32971507" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32930514" />
@@ -597,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="179" column="44" selection-start-line="179" selection-start-column="44" selection-end-line="179" selection-end-column="44" />
+        <state relative-caret-position="280">
+          <caret line="184" column="52" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
